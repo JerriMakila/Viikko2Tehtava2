@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Viikko 2 - Tehtävä 2</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<div>
+		<div>Welcome to the Haaga-Helia!</div>
+		<div th:each="student: ${students}">
+			<div th:text="${student.firstName} + ' ' + ${student.lastName}"></div>
+		</div>
+	</div>
+</body>
